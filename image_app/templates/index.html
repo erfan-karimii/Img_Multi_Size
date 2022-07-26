@@ -1,0 +1,13 @@
+{% load static %}
+<h1>test</h1>
+<hr>
+{% for post in posts %}
+{{post.name}}:
+<br>
+<img src="{{post.image.url}}">
+<br>
+thumnail:
+<br>
+<img src="/thumnail/{{post.image}}">
+<hr>
+{% endfor %}

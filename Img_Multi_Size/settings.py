@@ -118,7 +118,11 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 MEDIA_URL = 'media/'
+MEDIA_URL2 = 'thumnail/'
 MEDIA_ROOT = os.path.join(BASE_DIR,"media")
+MEDIA_ROOT2 = os.path.join(BASE_DIR,"thumnail")
+
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 

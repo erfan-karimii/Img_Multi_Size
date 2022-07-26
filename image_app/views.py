@@ -1,6 +1,8 @@
-from django import views
-from django.shortcuts import render ,HttpResponse
-
+from django.shortcuts import render 
+from .models import DiffSize 
 # Create your views here.
 def test_view(request):
-    return HttpResponse("test")
+    context = {
+        'posts' : DiffSize.objects.all() 
+    }
+    return render(request,'index.html',context)
